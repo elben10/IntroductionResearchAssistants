@@ -5,8 +5,8 @@ sudo: false
 cache: packages
 
 install:
-- R -e 'devtools::install_cran(c("rmarkdown", "pinp"))'
+- R -e 'options(repos = c(CRAN = \"http://cran.rstudio.com\"));devtools::install_cran(c(\"rmarkdown\", \"pinp\"))'
 
 script:
-- R --vanilla -e 'rmarkdown::render("README.Rmd")' 
-- R --vanilla -e 'rmarkdown::render("IntroductionResearchAssistants.Rmd")' 
+- R --vanilla -e 'rmarkdown::render(\"README.Rmd\")' 
+- R --vanilla -e 'rmarkdown::render(\"IntroductionResearchAssistants.Rmd\")' 
