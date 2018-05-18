@@ -1,0 +1,13 @@
+Package: advr
+Title: Advanced R
+Version: 1.0.0.9000
+Authors@R: c(
+  person("Jakob Jul", "Elben", , "elbenjakobjul@gmail.com", c("aut", "cre"))
+  )
+URL: https://github.com/elben10/IntroductionResearchAssistants
+Depends: 
+    R (>= 3.1.0)
+Imports: 
+    ggplot2,
+    pinp,
+    rmarkdown

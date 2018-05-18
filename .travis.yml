@@ -1,14 +1,9 @@
-# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
-
 language: R
 sudo: false
-cache: packages
+cache:
+  packages: true
 
-r_packages:
-- ggplot2
-- pinp
-- rmarkdown
+pandoc_version: 2.1.1
 
 script:
-- R --vanilla -e "rmarkdown::render('README.Rmd'); rmarkdown::render('IntroductionResearchAssistants.Rmd')" 
-  
+- Rscript -e "rmarkdown::render('README.Rmd'); rmarkdown::render('IntroductionResearchAssistants.Rmd')"
