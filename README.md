@@ -1,0 +1,15 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# Introduction for new Research Assistants
+
+The goal of this project is to provide an ever developing introduction
+to new research assistants at Department of Economics, University of
+Copenhagen. The repository introduces the statistical languages `SAS`
+and `Stata`. Furthermore a short introduction to scripting is also
+provided, because I have found this very useful when developing larger
+projects. The main project is contained in
+[IntroductionResearchAssistants.Rmd](IntroductionResearchAssistants.Rmd)
+that is in [R Markdown](https://rmarkdown.rstudio.com/) document that
+requires [R](https://www.r-project.org/), and the template is nicely
+provided by the package [pinp](https://CRAN.R-project.org/package=pinp).
