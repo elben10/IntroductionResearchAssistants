@@ -1,28 +1,23 @@
 ---
-title: A Template for Two or One-Column Vignettes
+title: An introduction to relevant tools for economic analysis
 
 # Use letters for affiliations
 author:
-  - name: First Author
+  - name: Jakob Jul Elben
     affiliation: a
-  - name: Second Author
-    affiliation: a,b
 address:
   - code: a
-    address: Institute of Smoke and Magic, University of Sometown, Sometown, XY, 12345
-  - code: b
-    address: Department of Neat Tricks, Whereever State University, Someplace, MC, 67890
+    address: Department of Economics, University of Copenhagen, Øster Farimagsgade 5, Building 26, 1353 Copenhagen K
 
 # For footer text  TODO(fold into template, allow free form two-authors)
 lead_author_surname: Author and Author
 
 # Place DOI URL or CRAN Package URL here
-doi: "https://cran.r-project.org/package=YourPackage"
+doi: "https://www.github.com/elben10/"
 
 # Abstract
 abstract: |
-  Your abstract will be typeset here, and used by default a visually distinctive font.
-  An abstract should explain to the general reader the major contributions of the article. 
+  This document gives a thorough introduction to the main tools you will meet in your position as research assistant at Department of      Economics.
 
 # Optional: Acknowledgements
 acknowledgements: |
@@ -230,6 +225,8 @@ commands `\footnotemark` and `\footnotetext`.
        \label{eqn:example} 
   \end{aligned}
 \end{equation}
+
+
 
 
 <!-- pandoc writes all tables using longtable, which fails in 2-column mode
