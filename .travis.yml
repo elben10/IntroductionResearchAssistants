@@ -1,0 +1,12 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: R
+sudo: false
+cache: packages
+
+install:
+- R -e 'devtools::install_cran(c("rmarkdown", "pinp"))'
+
+script:
+- R --vanilla -e 'rmarkdown::render("README.Rmd")' 
+- R --vanilla -e 'rmarkdown::render("IntroductionResearchAssistants.Rmd")' 
