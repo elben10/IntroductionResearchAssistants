@@ -5,5 +5,9 @@ cache:
 
 pandoc_version: 2.1.1
 
+before_install:
+- wget -qO- \
+  "https://github.com/yihui/tinytex/raw/master/tools/install-unx.sh" | sh
+
 script:
 - Rscript -e "rmarkdown::render('README.Rmd'); rmarkdown::render('IntroductionResearchAssistants.Rmd')"

@@ -10,4 +10,5 @@ Depends:
 Imports: 
     ggplot2,
     pinp,
-    rmarkdown
+    rmarkdown,
+    tinytex
