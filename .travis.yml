@@ -5,7 +5,7 @@ sudo: false
 cache: packages
 
 install:
-- R -e "options(repos = c(CRAN = 'http://cran.rstudio.com'));devtools::install_cran(c('rmarkdown', 'pinp'))"
+- R -e "options(repos = c(CRAN = 'http://cran.rstudio.com'));install.packages(c('rmarkdown', 'pinp'))"
 
 script:
 - R --vanilla -e "rmarkdown::render('README.Rmd')" 
