@@ -5,13 +5,10 @@ sudo: false
 cache: packages
 
 r_packages:
-  - rmarkdown
+  - ggplot2
   - pinp
-
-#install:
-#- R -e "options(repos = c(CRAN = 'http://cran.rstudio.com'));install.packages(c('rmarkdown', 'pinp'))"
+  - rmarkdown
 
 script:
-- R --vanilla -e "rmarkdown::render('README.Rmd')" 
-#- R --vanilla -e "rmarkdown::render('IntroductionResearchAssistants.Rmd')" 
+  - R --vanilla -e "rmarkdown::render('README.Rmd'); rmarkdown::render('IntroductionResearchAssistants.Rmd')" 
   
