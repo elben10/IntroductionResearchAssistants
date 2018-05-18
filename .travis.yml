@@ -1,7 +1,9 @@
 language: R
-sudo: false
+sudo: true
 cache:
   packages: true
+  directories: 
+    - $HOME/.TinyTeX
 
 pandoc_version: 2.1.1
 
